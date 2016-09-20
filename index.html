@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>GameHolder</title>
+    <style media="screen">
+      * {
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+      }
+      body {
+        min-height: 90vh;
+        min-width: 100%;
+        background-color: green;
+      }
+      canvas {
+        background-color: wheat;
+        margin: 0 auto;
+        position: relative;
+        display: block;
+        margin-top: 5vh;
+      }
+      #estadisticas{
+        position: relative;
+        width: 250px;
+        height: 200px;
+        background-color: rgba(33, 22, 22, 0.12);
+        border-radius: 15px;
+        padding: 10px;
+        margin: 15px;
+      }
+      #sprites {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="640" height="480"></canvas>
+    <div id="estadisticas">
+      <p>X:<span id="x">0</span></p>
+      <p>Y:<span id="y">0</span></p>
+      <p>motionX:<span id="motionX">0</span></p>
+      <p>motionY:<span id="motionY">0</span></p>
+
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="public/game.js"> </script>
+  </body>
+</html>
